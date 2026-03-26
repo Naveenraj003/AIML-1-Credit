@@ -1,17 +1,17 @@
 export const profile = {
-  name: "Aarav N. Dev",
+  name: "Naveen Raj B V",
   shortBio:
-    "Student developer building expressive interfaces, practical products, and playful digital experiences.",
+    "AI/ML student at K.S. Rangasamy College of Technology building real-world solutions like AgriThirai and AI-based plant diagnostic systems.",
   longBio:
-    "I turn ideas into clean, fast, and memorable web apps. I love blending engineering with design, shipping experiments, and refining details until every interaction feels intentional.",
+    "I am a third-year B.E. student specializing in Artificial Intelligence and Machine Learning at K.S. Rangasamy College of Technology, Tiruchengode. I focus on building practical, real-world solutions that go beyond theoretical implementation. I am currently working on AgriThirai, an all-in-one platform for farmers with real-time crop prices, AI-driven farming insights, weather predictions, and government scheme updates to improve market access and reduce post-harvest losses. In parallel, I am developing an AI-based plant diagnostic system for species identification, disease detection, health analysis, and actionable recommendations, with the long-term goal of pursuing a patent. I also work across the full stack to build complete deployable systems, with a technical foundation in Python, Java, SQL, and web technologies, while strengthening data structures and backend skills as part of placement preparation.",
   roles: [
-    "Full-Stack Student Developer",
-    "UI/UX Explorer",
-    "Hackathon Builder",
-    "Creative Coder",
+    "AI/ML Engineering Student",
+    "Full-Stack Builder",
+    "AgriTech Problem Solver",
+    "Real-World Product Developer",
   ],
-  email: "hello@studentdev.com",
-  location: "Bengaluru, India",
+  email: "Add your email",
+  location: "Tiruchengode, Tamil Nadu",
 };
 
 export const navLinks = [
@@ -23,57 +23,98 @@ export const navLinks = [
 ];
 
 export const skills = [
+  "Python",
+  "Java",
+  "SQL",
   "Next.js",
   "React",
-  "Tailwind",
+  "Tailwind CSS",
   "Node.js",
-  "TypeScript",
-  "Figma",
-  "Framer",
-  "Java",
-  "Python",
+  "Machine Learning",
+  "Data Structures",
+  "Backend Development",
   "Git",
   "REST APIs",
-  "Prompt Design",
 ];
 
 export const funFacts = [
-  "Built 15+ mini projects in one semester",
-  "Enjoys 48-hour hackathons and UI game jams",
-  "Collects screenshots of beautiful loading states",
-  "Turns class assignments into portfolio experiments",
+  "Building AgriThirai to support farmers with data-driven decisions",
+  "Designing an AI-based plant diagnostic system with patent intent",
+  "Focused on scalable AI applications in agriculture and beyond",
+  "Actively preparing for placements with DSA and backend practice",
 ];
 
 export const projects = [
   {
-    name: "PulseBoard",
+    name: "AgriThirai",
+    type: "Full-stack + AI-based platform",
+    status: "Ongoing",
     description:
-      "A visual productivity dashboard with custom routines, weekly rhythm maps, and progress streaks.",
-    tags: ["Next.js", "Tailwind", "UX"],
+      "An all-in-one platform for farmers and buyers delivering real-time crop prices, AI-driven farming advice, weather predictions, and government scheme updates.",
+    highlights: [
+      "Improve market access",
+      "Reduce post-harvest losses",
+      "Support sustainable agriculture",
+    ],
+    tags: ["Full Stack", "AI/ML", "AgriTech"],
     github: "#",
     live: "#",
   },
   {
-    name: "CampusCart",
+    name: "AI-Based Plant Diagnostic System",
+    type: "AI/ML system",
+    status: "Ongoing",
     description:
-      "A student marketplace concept for buying, selling, and swapping essentials inside campus communities.",
-    tags: ["React", "Node.js", "MongoDB"],
+      "An AI-powered diagnostic pipeline that identifies plant species, detects diseases, monitors plant health conditions, and provides actionable recommendations.",
+    highlights: [
+      "Identifies plant species",
+      "Detects diseases",
+      "Monitors health and provides solutions",
+    ],
+    specialNote: "Planned for patent application",
+    tags: ["AI/ML", "Computer Vision", "Patent"],
     github: "#",
     live: "#",
   },
   {
-    name: "InkMotion",
+    name: "Water Level Detector & Notifier",
+    type: "Embedded / IoT project",
+    status: "Planned",
     description:
-      "An interactive storytelling web experience with chapter transitions, mood palettes, and audio cues.",
-    tags: ["Creative Coding", "Animation", "JavaScript"],
+      "A low-cost embedded system to detect tank water level and alert users before overflow, designed for open environmental conditions.",
+    highlights: [
+      "Buzzer logic linked with motor state",
+      "Wireless-first setup to avoid wiring",
+      "Continuous alert until motor is turned off",
+    ],
+    specialNote: "Phone notification integration planned",
+    tags: ["IoT", "Embedded", "Sensors"],
     github: "#",
     live: "#",
   },
   {
-    name: "DevQuest",
+    name: "BoatGuard - AI Load Monitor for Safer Sea Tourism",
+    type: "AI + Sensor-based system",
+    status: "MSME Hackathon project",
     description:
-      "Gamified coding challenge tracker with XP points, level progression, and collaborative squads.",
-    tags: ["Next.js", "Firebase", "Gamification"],
+      "An AI and pressure-sensor based safety system that monitors load distribution in boats and detects overcapacity to prevent accidents.",
+    highlights: [
+      "Uses AI + pressure sensors",
+      "Monitors load distribution",
+      "Detects overcapacity risk",
+    ],
+    tags: ["AI", "Sensors", "Safety Tech"],
+    github: "#",
+    live: "#",
+  },
+  {
+    name: "Restaurant Menu Ordering System (DBMS)",
+    type: "Database system design",
+    status: "Academic project",
+    description:
+      "A database-focused restaurant ordering system project centered on structured data modeling and efficient schema planning.",
+    highlights: ["ER diagram design", "Schema planning"],
+    tags: ["DBMS", "SQL", "Academic"],
     github: "#",
     live: "#",
   },

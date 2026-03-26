@@ -13,8 +13,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-10">
         <Link href="/" className="group text-xl font-black tracking-[0.18em] text-white">
-          <span className="text-cyan-300 group-hover:text-fuchsia-300 transition-colors">NOVA</span>
-          <span className="text-white">/DEV</span>
+          <span className="text-cyan-300 group-hover:text-fuchsia-300 transition-colors">NAVEEN</span>
+          <span className="text-white">/AI</span>
         </Link>
 
         <button
