@@ -1,4 +1,5 @@
 import ContactForm from "@/components/ContactForm";
+import KineticTitle from "@/components/KineticTitle";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import { profile, socials } from "@/data/siteData";
 
@@ -8,16 +9,18 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="page-enter mx-auto w-full max-w-6xl px-6 py-14 md:px-10">
+    <div className="layout-shell page-enter mx-auto w-full max-w-6xl px-5 py-10 md:px-8">
       <header className="mb-10 max-w-3xl reveal reveal-visible" data-variant="right">
-        <p className="text-xs font-bold uppercase tracking-[0.25em] text-cyan-300">Contact</p>
-        <h1 className="mt-4 text-4xl font-black text-white md:text-6xl">Let&apos;s Build Something Loud and Useful</h1>
+        <p className="title-strip">Contact</p>
+        <h1 className="mt-4 text-4xl font-black text-white md:text-6xl">
+          <KineticTitle text="Let's Build Something Loud and Useful" />
+        </h1>
       </header>
 
       <section className="grid gap-8 md:grid-cols-5">
         <div className="space-y-4 md:col-span-2">
           <RevealOnScroll variant="left" delay={80}>
-            <div className="fx-panel rounded-3xl border border-white/10 bg-slate-900/75 p-6">
+            <div className="fx-panel sig-contact rounded-3xl border border-white/10 bg-slate-900/75 p-6">
             <p className="text-xs uppercase tracking-[0.18em] text-fuchsia-300">Email</p>
             <p className="mt-2 text-lg font-semibold text-white">{profile.email}</p>
             <p className="mt-4 text-xs uppercase tracking-[0.18em] text-fuchsia-300">Location</p>
@@ -25,7 +28,7 @@ export default function ContactPage() {
             </div>
           </RevealOnScroll>
           <RevealOnScroll variant="left" delay={160}>
-            <div className="fx-panel rounded-3xl border border-white/10 bg-slate-900/75 p-6">
+            <div className="fx-panel sig-contact rounded-3xl border border-white/10 bg-slate-900/75 p-6">
             <p className="mb-3 text-xs uppercase tracking-[0.18em] text-fuchsia-300">Socials</p>
             <div className="flex flex-wrap gap-3">
               {socials.map((social) => (

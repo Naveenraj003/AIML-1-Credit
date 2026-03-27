@@ -65,7 +65,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="fx-card space-y-4 rounded-3xl border border-white/10 bg-slate-900/75 p-6">
+    <form onSubmit={handleSubmit} className="fx-card sig-contact-form space-y-4 rounded-3xl border border-white/10 bg-slate-900/75 p-6">
       {[
         { name: "name", label: "Name", type: "text" },
         { name: "email", label: "Email", type: "email" },

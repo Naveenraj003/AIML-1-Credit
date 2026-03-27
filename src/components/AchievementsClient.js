@@ -16,7 +16,7 @@ export default function AchievementsClient() {
 
   return (
     <section className="space-y-8">
-      <div className="inline-flex rounded-2xl border border-white/10 bg-white/5 p-2 fx-panel">
+      <div className="inline-flex rounded-2xl border border-white/10 bg-white/5 p-2 fx-panel sig-achieve-panel">
         {tabs.map((tab) => (
           <button
             key={tab.key}
@@ -36,7 +36,7 @@ export default function AchievementsClient() {
       <div className="relative border-l border-white/15 pl-8 space-y-8">
         {items.map((item, index) => (
           <RevealOnScroll key={item.title} variant={index % 2 === 0 ? "left" : "right"} delay={index * 80}>
-            <article className="fx-card relative rounded-2xl border border-white/10 bg-slate-900/70 p-5 hover:border-cyan-300/40">
+            <article className="fx-card sig-achieve relative rounded-2xl border border-white/10 bg-slate-900/70 p-5 hover:border-cyan-300/40">
               <span className="absolute -left-[38px] top-6 h-3 w-3 rounded-full bg-cyan-300 shadow-[0_0_12px_rgba(34,211,238,0.8)]" />
               <p className="text-xs uppercase tracking-[0.22em] text-fuchsia-300">{item.date}</p>
               <h3 className="mt-2 text-xl font-black text-white">{item.title}</h3>

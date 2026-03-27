@@ -1,4 +1,5 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
+import KineticTitle from "@/components/KineticTitle";
 import { travelStats, travels } from "@/data/siteData";
 
 export const metadata = {
@@ -7,18 +8,19 @@ export const metadata = {
 
 export default function TravelPage() {
   return (
-    <div className="page-enter mx-auto w-full max-w-6xl px-6 py-14 md:px-10">
+    <div className="layout-shell page-enter mx-auto w-full max-w-6xl px-5 py-10 md:px-8">
       <header className="mb-10 max-w-3xl reveal reveal-visible" data-variant="left">
-        <p className="text-xs font-bold uppercase tracking-[0.25em] text-emerald-300">Travel Logs</p>
-        <h1 className="mt-4 text-4xl font-black text-white md:text-6xl">Journeys That Shape My Design Eye</h1>
+        <p className="title-strip">Travel Logs</p>
+        <h1 className="mt-4 text-4xl font-black text-white md:text-6xl">
+          <KineticTitle text="Journeys That Shape My Design Eye" />
+        </h1>
       </header>
 
       <section className="mb-10 grid gap-4 md:grid-cols-3">
         {travelStats.map((item, index) => (
           <RevealOnScroll key={item.label} variant="zoom" delay={index * 90}>
             <div
-            key={item.label}
-              className="fx-panel rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-4 text-center"
+              className="fx-panel sig-travel-stat rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-4 text-center"
             >
               <p className="text-3xl font-black text-cyan-200">{item.value}</p>
               <p className="text-xs uppercase tracking-[0.2em] text-white/60">{item.label}</p>
@@ -30,7 +32,7 @@ export default function TravelPage() {
       <section className="grid gap-6 md:grid-cols-3">
         {travels.map((travel, index) => (
           <RevealOnScroll key={travel.place} variant={index % 2 === 0 ? "left" : "right"} delay={index * 70}>
-            <article className="fx-card group h-full overflow-hidden rounded-3xl border border-white/10 bg-slate-900/80 hover:border-emerald-300/40">
+            <article className="fx-card sig-travel group h-full overflow-hidden rounded-3xl border border-white/10 bg-slate-900/80 hover:border-emerald-300/40">
               <div className="h-44 bg-[linear-gradient(135deg,#0f172a_5%,#14532d_55%,#06b6d4_100%)] p-5 flex items-end">
                 <p className="rounded-full bg-black/35 px-3 py-1 text-xs text-emerald-100">Image Placeholder</p>
               </div>
