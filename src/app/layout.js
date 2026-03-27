@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackdrop from "@/components/AnimatedBackdrop";
+import CustomCursor from "@/components/CustomCursor";
 
 const bodyFont = Manrope({
   variable: "--font-manrope",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col bg-slate-950 text-white">
         <AnimatedBackdrop />
+        <CustomCursor />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

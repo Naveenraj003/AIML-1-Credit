@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function RevealOnScroll({ children, className = "" }) {
+export default function RevealOnScroll({ children, className = "", variant = "up", delay = 0 }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -25,7 +25,12 @@ export default function RevealOnScroll({ children, className = "" }) {
   }, []);
 
   return (
-    <div ref={ref} className={`reveal ${visible ? "reveal-visible" : ""} ${className}`}>
+    <div
+      ref={ref}
+      data-variant={variant}
+      style={{ transitionDelay: `${delay}ms` }}
+      className={`reveal ${visible ? "reveal-visible" : ""} ${className}`}
+    >
       {children}
     </div>
   );

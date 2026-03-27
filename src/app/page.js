@@ -41,16 +41,17 @@ export default function Home() {
           className="group absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.22em] text-white/65 transition hover:text-cyan-200"
         >
           <span>Scroll Down</span>
-          <span className="scroll-mouse">
-            <span className="scroll-dot" />
+          <span className="scroll-wave" aria-hidden="true">
+            <span className="scroll-chevron" />
+            <span className="scroll-chevron" />
+            <span className="scroll-chevron" />
           </span>
-          <span className="scroll-trail" />
         </a>
       </section>
 
-      <RevealOnScroll className="mt-16">
+      <RevealOnScroll className="mt-16" variant="zoom" delay={80}>
         <section id="about" className="grid gap-8 md:grid-cols-5">
-          <div className="md:col-span-2 rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+          <div className="fx-panel glow-orbit md:col-span-2 rounded-3xl border border-white/10 bg-slate-900/70 p-6">
             <div className="h-56 rounded-2xl bg-[linear-gradient(145deg,#0f172a,#1d4ed8_45%,#06b6d4)] flex items-center justify-center">
               <p className="rounded-full border border-white/25 px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/85">
                 Profile Photo Placeholder
@@ -65,12 +66,12 @@ export default function Home() {
           </div>
 
           <div className="space-y-6 md:col-span-3">
-            <article className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+            <article className="fx-panel rounded-3xl border border-white/10 bg-slate-900/70 p-6">
               <h2 className="font-display text-3xl font-black text-white">About Me</h2>
               <p className="mt-4 text-white/75 leading-relaxed">{profile.longBio}</p>
             </article>
 
-            <article className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+            <article className="fx-panel rounded-3xl border border-white/10 bg-slate-900/70 p-6">
               <h3 className="text-xs font-bold uppercase tracking-[0.22em] text-fuchsia-300">Skills Orbit</h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {skills.map((skill, index) => (
@@ -85,7 +86,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+            <article className="fx-panel rounded-3xl border border-white/10 bg-slate-900/70 p-6">
               <h3 className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-300">Fun Facts</h3>
               <ul className="mt-4 space-y-3 text-sm text-white/75">
                 {funFacts.map((fact) => (

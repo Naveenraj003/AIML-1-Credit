@@ -39,12 +39,15 @@ export default function ProjectsClient() {
       <div className="grid gap-6 md:grid-cols-6">
         {filteredProjects.map((project, index) => {
           const large = index % 3 === 0;
+          const variant = index % 2 === 0 ? "left" : "right";
           return (
             <RevealOnScroll
               key={project.name}
+              variant={variant}
+              delay={index * 70}
               className={`${large ? "md:col-span-4" : "md:col-span-2"}`}
             >
-              <article className="group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-slate-900/80 p-6 transition hover:-translate-y-1 hover:border-cyan-300/40 hover:shadow-[0_0_35px_rgba(34,211,238,0.25)]">
+              <article className="fx-card group relative h-full overflow-hidden rounded-3xl border border-white/10 bg-slate-900/80 p-6 hover:border-cyan-300/40 hover:shadow-[0_0_35px_rgba(34,211,238,0.25)]">
                 <div className="absolute inset-0 bg-[linear-gradient(110deg,rgba(34,211,238,0.12),transparent_40%,rgba(217,70,239,0.12))] opacity-0 transition duration-500 group-hover:opacity-100" />
                 <div className="relative flex h-full flex-col justify-between gap-5">
                   <div>
