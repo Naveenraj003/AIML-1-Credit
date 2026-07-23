@@ -1,121 +1,132 @@
 export const profile = {
   name: "Naveen Raj B V",
+  college: "K.S. Rangasamy College of Technology (KSRCT)",
+  degree: "B.E. Artificial Intelligence and Machine Learning",
+  year: "Final Year",
+  expectedGraduation: "2027",
+  location: "Tiruchengode, Tamil Nadu, India",
+  email: "naveenrajbv@example.com",
   shortBio:
-    "AI/ML student at K.S. Rangasamy College of Technology building real-world solutions like AgriThirai and AI-based plant diagnostic systems.",
+    "Final Year B.E. AI & ML student at KSRCT (Graduating 2027). Currently focused on securing Software Engineering roles through strong project work, backend development, and DSA preparation.",
   longBio:
-    "I am a third-year B.E. student specializing in Artificial Intelligence and Machine Learning at K.S. Rangasamy College of Technology, Tiruchengode. I focus on building practical, real-world solutions that go beyond theoretical implementation. I am currently working on AgriThirai, an all-in-one platform for farmers with real-time crop prices, AI-driven farming insights, weather predictions, and government scheme updates to improve market access and reduce post-harvest losses. In parallel, I am developing an AI-based plant diagnostic system for species identification, disease detection, health analysis, and actionable recommendations, with the long-term goal of pursuing a patent. I also work across the full stack to build complete deployable systems, with a technical foundation in Python, Java, SQL, and web technologies, while strengthening data structures and backend skills as part of placement preparation.",
+    "I am a Final Year engineering student specializing in Artificial Intelligence and Machine Learning (Graduation 2027). I prioritize building practical products over theoretical showcases. My work centers on solving real-world challenges using AI, backend architectures, and modern web technologies. Currently focused on securing Software Engineering roles through strong project work (like AgriThirai and AI plant diagnostics), robust backend development, and daily Data Structures & Algorithms preparation.",
   roles: [
-    "AI/ML Engineering Student",
-    "Full-Stack Builder",
+    "Software Engineering Aspirant",
+    "Full-Stack & AI Builder",
     "AgriTech Problem Solver",
-    "Real-World Product Developer",
+    "Java & Backend Enthusiast",
   ],
-  email: "Add your email",
-  location: "Tiruchengode, Tamil Nadu",
 };
 
 export const navLinks = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
-  { label: "Achievements", href: "/achievements" },
-  { label: "Travel", href: "/travel" },
+  { label: "Journey", href: "/journey" },
+  { label: "Credentials", href: "/achievements" },
   { label: "Contact", href: "/contact" },
 ];
 
-export const skills = [
-  "Python",
-  "Java",
-  "SQL",
-  "Next.js",
-  "React",
-  "Tailwind CSS",
-  "Node.js",
-  "Machine Learning",
-  "Data Structures",
-  "Backend Development",
-  "Git",
-  "REST APIs",
+export const categorizedSkills = [
+  {
+    category: "Languages",
+    skills: ["Python", "Java", "SQL", "JavaScript", "TypeScript"],
+  },
+  {
+    category: "Frontend",
+    skills: ["React", "Next.js", "HTML5", "CSS3", "Tailwind CSS"],
+  },
+  {
+    category: "Backend & Systems",
+    skills: ["FastAPI", "Node.js", "REST APIs"],
+  },
+  {
+    category: "Databases",
+    skills: ["PostgreSQL", "MySQL", "Supabase"],
+  },
+  {
+    category: "AI / ML & Data",
+    skills: ["TensorFlow", "OpenCV", "Scikit-learn", "NumPy", "Pandas"],
+  },
+  {
+    category: "Tools & Infrastructure",
+    skills: ["Git", "GitHub", "VS Code", "Firebase", "Vercel"],
+  },
 ];
 
-export const funFacts = [
-  "Building AgriThirai to support farmers with data-driven decisions",
-  "Designing an AI-based plant diagnostic system with patent intent",
-  "Focused on scalable AI applications in agriculture and beyond",
-  "Actively preparing for placements with DSA and backend practice",
+export const skills = [
+  "Java",
+  "Python",
+  "SQL",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+  "FastAPI",
+  "Node.js",
+  "REST APIs",
+  "PostgreSQL",
+  "MySQL",
+  "Supabase",
+  "TensorFlow",
+  "OpenCV",
+  "Git",
+];
+
+export const currentFocus = [
+  "Solving Data Structures & Algorithms daily using Java",
+  "Building scalable backend services and REST API architectures",
+  "Developing production-ready AI applications for agricultural impact",
+  "Mastering software engineering fundamentals and clean code principles",
+  "Exploring modern full-stack web development with Next.js & React",
 ];
 
 export const projects = [
   {
     name: "AgriThirai",
-    type: "Full-stack + AI-based platform",
-    status: "Ongoing",
+    type: "Flagship Full-Stack + AI Platform",
+    status: "Active Development",
     description:
-      "An all-in-one platform for farmers and buyers delivering real-time crop prices, AI-driven farming advice, weather predictions, and government scheme updates.",
+      "An all-in-one smart agriculture platform enabling farmers to access real-time crop market prices, weather updates, intelligent farming advice, and government scheme notifications.",
     highlights: [
-      "Improve market access",
-      "Reduce post-harvest losses",
-      "Support sustainable agriculture",
+      "AI-powered intelligent farming assistant for localized advice",
+      "Real-time crop price updates & market access enhancement",
+      "Scalable full-stack architecture built for real-world agricultural impact",
     ],
-    tags: ["Full Stack", "AI/ML", "AgriTech"],
-    github: "#",
+    tags: ["Next.js", "FastAPI", "Python", "AI/ML", "Tailwind CSS"],
+    github: "https://github.com/Naveenraj003",
     live: "#",
+    flagship: true,
   },
   {
     name: "AI-Based Plant Diagnostic System",
-    type: "AI/ML system",
+    type: "AI Research & Product",
     status: "Ongoing",
     description:
-      "An AI-powered diagnostic pipeline that identifies plant species, detects diseases, monitors plant health conditions, and provides actionable recommendations.",
+      "A computer vision system capable of identifying plant species and diagnosing leaf diseases directly from images, providing actionable treatment recommendations.",
     highlights: [
-      "Identifies plant species",
-      "Detects diseases",
-      "Monitors health and provides solutions",
+      "Deep learning pipeline using OpenCV & TensorFlow",
+      "Automated disease detection & health analysis",
+      "Designed with long-term intent for agricultural patent filing",
     ],
-    specialNote: "Planned for patent application",
-    tags: ["AI/ML", "Computer Vision", "Patent"],
-    github: "#",
+    specialNote: "Research & Development with future patent scope",
+    tags: ["Python", "Computer Vision", "TensorFlow", "OpenCV", "Deep Learning"],
+    github: "https://github.com/Naveenraj003",
     live: "#",
   },
   {
-    name: "Water Level Detector & Notifier",
-    type: "Embedded / IoT project",
-    status: "Planned",
+    name: "BoatGuard",
+    type: "AI + Sensor Safety System",
+    status: "MSME Hackathon",
     description:
-      "A low-cost embedded system to detect tank water level and alert users before overflow, designed for open environmental conditions.",
+      "An intelligent maritime safety monitoring system combining pressure sensors and AI decision support to detect overcapacity and prevent boat accidents.",
     highlights: [
-      "Buzzer logic linked with motor state",
-      "Wireless-first setup to avoid wiring",
-      "Continuous alert until motor is turned off",
+      "Real-time sensor data integration for load monitoring",
+      "Automated overcapacity alert trigger",
+      "Developed and presented for MSME Hackathon",
     ],
-    specialNote: "Phone notification integration planned",
-    tags: ["IoT", "Embedded", "Sensors"],
-    github: "#",
-    live: "#",
-  },
-  {
-    name: "BoatGuard - AI Load Monitor for Safer Sea Tourism",
-    type: "AI + Sensor-based system",
-    status: "MSME Hackathon project",
-    description:
-      "An AI and pressure-sensor based safety system that monitors load distribution in boats and detects overcapacity to prevent accidents.",
-    highlights: [
-      "Uses AI + pressure sensors",
-      "Monitors load distribution",
-      "Detects overcapacity risk",
-    ],
-    tags: ["AI", "Sensors", "Safety Tech"],
-    github: "#",
-    live: "#",
-  },
-  {
-    name: "Restaurant Menu Ordering System (DBMS)",
-    type: "Database system design",
-    status: "Academic project",
-    description:
-      "A database-focused restaurant ordering system project centered on structured data modeling and efficient schema planning.",
-    highlights: ["ER diagram design", "Schema planning"],
-    tags: ["DBMS", "SQL", "Academic"],
-    github: "#",
+    tags: ["AI", "Sensors", "IoT Logic", "Safety Tech"],
+    github: "https://github.com/Naveenraj003",
     live: "#",
   },
 ];
@@ -123,78 +134,88 @@ export const projects = [
 export const achievements = {
   certifications: [
     {
-      title: "Meta Front-End Developer Certificate",
-      org: "Coursera",
-      date: "2025",
-      note: "Completed capstone with strong accessibility score.",
+      title: "Google AI-ML Virtual Internship",
+      org: "Google / EduSkills",
+      date: "Verified",
+      note: "Hands-on experience in machine learning pipelines, model training, and data evaluation.",
     },
     {
-      title: "Google UX Design Foundations",
-      org: "Google",
-      date: "2024",
-      note: "Focused on user flows and prototype testing.",
+      title: "ICT Academy Training Programs",
+      org: "ICT Academy",
+      date: "Verified",
+      note: "Technical skill building in core computing and industry software practices.",
+    },
+    {
+      title: "MERN Stack Development Workshop",
+      org: "Hands-on Workshop",
+      date: "Completed",
+      note: "Full-stack application development using MongoDB, Express, React, and Node.js.",
+    },
+    {
+      title: "Cyber Security Fundamentals",
+      org: "Technical Workshop",
+      date: "Completed",
+      note: "Foundation in network security, web application vulnerabilities, and safe coding practices.",
     },
   ],
   hackathons: [
     {
-      title: "Hack The Grid 2025",
-      org: "National Student League",
-      date: "Winner",
-      note: "Built an AI-assisted emergency response routing prototype.",
-    },
-    {
-      title: "BuildSprint 3.0",
-      org: "Dev Club",
-      date: "Top 5",
-      note: "Shipped a no-code event planner for student teams.",
-    },
-  ],
-  awards: [
-    {
-      title: "Best Interface Design",
-      org: "College Tech Fest",
-      date: "2025",
-      note: "Recognized for interactive data storytelling concept.",
-    },
-    {
-      title: "Open Source Rookie",
-      org: "Community Chapter",
-      date: "2024",
-      note: "Contributed fixes and docs across 10 repositories.",
+      title: "BoatGuard - MSME Hackathon",
+      org: "MSME Hackathon",
+      date: "Project Submission",
+      note: "Designed and presented BoatGuard—an AI and pressure sensor safety system for maritime transport.",
     },
   ],
 };
 
-export const travels = [
+export const engineeringJourney = [
   {
-    place: "Munnar, Kerala",
-    story:
-      "Woke up before sunrise, coded from a hillside cafe, and watched clouds roll over tea gardens while fixing a layout bug.",
-    imageLabel: "Misty hills and tea estates",
+    step: "01",
+    title: "Started Programming",
+    period: "Foundation",
+    description: "Began coding with Python and Java, building problem-solving logic and core computer science fundamentals.",
   },
   {
-    place: "Jaipur, Rajasthan",
-    story:
-      "Explored markets, photographed patterns, and reused those motifs in a portfolio redesign system.",
-    imageLabel: "Warm architecture and busy streets",
+    step: "02",
+    title: "Explored AI & Machine Learning",
+    period: "Specialization",
+    description: "Deepened knowledge in Data Science, computer vision (OpenCV), and machine learning libraries (Scikit-learn, TensorFlow).",
   },
   {
-    place: "Pondicherry, Tamil Nadu",
-    story:
-      "Spent evenings by the promenade journaling product ideas and prototyping interaction flows.",
-    imageLabel: "Seafront walkway and pastel buildings",
+    step: "03",
+    title: "Built BoatGuard",
+    period: "Hackathon Milestone",
+    description: "Designed a sensor + AI safety monitor to prevent boat overcapacity for the MSME Hackathon.",
   },
-];
-
-export const travelStats = [
-  { label: "Countries", value: 2 },
-  { label: "Cities", value: 11 },
-  { label: "Experiences", value: 39 },
+  {
+    step: "04",
+    title: "Google AI-ML Virtual Internship",
+    period: "Industry Experience",
+    description: "Gained practical experience with industry AI workflows, structured ML models, and data pipelines.",
+  },
+  {
+    step: "05",
+    title: "Building AgriThirai",
+    period: "Flagship Product",
+    description: "Architected a full-stack platform providing real-time market prices, AI farming advice, and weather insights to farmers.",
+  },
+  {
+    step: "06",
+    title: "Building AI Plant Diagnostic System",
+    period: "Research & Development",
+    description: "Developing a deep learning diagnostic system for leaf disease detection with intent for agricultural patent filing.",
+  },
+  {
+    step: "07",
+    title: "Preparing for Software Engineering Placements",
+    period: "Final Year Focus",
+    description: "Actively solving DSA problems daily in Java, mastering system design basics, and building scalable full-stack applications.",
+  },
 ];
 
 export const socials = [
-  { label: "GitHub", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "X", href: "#" },
-  { label: "Dribbble", href: "#" },
+  { label: "GitHub", href: "https://github.com/Naveenraj003" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/" },
+  { label: "Email", href: "mailto:naveenrajbv@example.com" },
+  { label: "Resume", href: "#" },
 ];
